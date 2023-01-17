@@ -70,7 +70,7 @@ for (int i = 0; i < flightFare.Length; i++)
 {
     for (int j = i + 1; j < flightFare.Length; j++)
     {
-        if (flightFare[i] == flightFare[j])
+        if (flightFare[i] == flightFare[j] && !duplicates.Contains(flightFare[i]))
         {
             duplicates.Add(flightFare[i]);
             count++;
@@ -78,7 +78,7 @@ for (int i = 0; i < flightFare.Length; i++)
         }
     }
 }
-Console.WriteLine(count + message);
+Console.WriteLine($"{count} {message}");
 foreach (double fare in duplicates)
 {
     Console.WriteLine(fare);
