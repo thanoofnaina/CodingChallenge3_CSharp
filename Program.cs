@@ -1,7 +1,7 @@
 ﻿//Accept 10 flight fares in decimal format into an array.
 using System.Security.Cryptography.X509Certificates;
 
-int n = 5;
+int n = 10;
 double[] flightFare = new double[n];
 for (int i = 0; i < n; i++)
 {
